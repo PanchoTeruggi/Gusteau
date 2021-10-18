@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'recetas',
     loadChildren: () => import('./recetas/recetas.module').then( m => m.RecetasPageModule)
+  },  {
+    path: 'registrate',
+    loadChildren: () => import('./registrate/registrate.module').then( m => m.RegistratePageModule)
   },
+
 
 ];
 
