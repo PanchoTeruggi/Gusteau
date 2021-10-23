@@ -1,13 +1,26 @@
-.img1{width: 50%;
-margin-left: 25%;}
-.img2{width: 50%;
-    margin-left: 25%;}
-.img3{width: 50%;
-    margin-left: 25%;}
+.imgstyle{width: 50%;
+margin-left: 25%;
+border-style:ridge;
+}
+
 
 .subtitulo{
     text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 5%;
 }
 .titulo{
     text-align: center;
+    font-family:fantasy;
+    text-decoration: underline;
+}
+.Tit{
+    font-size: 40px;
+    font-family:monospace;
+    text-decoration: underline lightseagreen;
+
+}
+.card{
+    background-color: white;
+    border-style: outset;
 }
