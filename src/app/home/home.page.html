@@ -3,21 +3,39 @@
     <ion-title class="Tit">Gusteau</ion-title>
   </ion-toolbar>
 </ion-header>
-<br>
- <br>
- <br>
-
 <ion-content>
-  
- <ion-img class="img1" [src]="img"></ion-img>
- <br>
- <br>
- <br>
- <br>
- <ion-img class="img2" [src]="img2"></ion-img>
- <br>
- <br>
- <br>
- <br>
- <ion-img class="img3" [src]="img3"></ion-img>
+ <ion-card>
+  <ion-card-header>
+    <ion-img [src]="img" class="img1"></ion-img>
+    <ion-card-title class="titulo">Pasta</ion-card-title>
+    <ion-card-subtitle class="subtitulo">Fideos con salsa rosso</ion-card-subtitle>
+  </ion-card-header>
+  <ion-button class=botonir color="light" >
+    <ion-icon slot="start" name="restaurant-outline" color="success"></ion-icon>
+  Ver receta
+  </ion-button>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <ion-img [src]="img2" class="img2"></ion-img>
+    <ion-card-title class="titulo">Carne</ion-card-title>
+    <ion-card-subtitle class="subtitulo">Ojo de bife con esparragos</ion-card-subtitle>
+  </ion-card-header>
+  <ion-button color="light" >
+    <ion-icon slot="start" name="restaurant-outline" color="success"></ion-icon>
+  Ver receta
+  </ion-button>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <ion-img [src]="img3" class="img3"></ion-img>
+    <ion-card-title class="titulo">Milanesa</ion-card-title>
+    <ion-card-subtitle class="subtitulo">Milanesa de peceto con papas fritas</ion-card-subtitle>
+  </ion-card-header>
+  <ion-button color="light" >
+    <ion-icon slot="start" name="restaurant-outline" color="success"></ion-icon>
+  Ver receta
+  </ion-button>
+</ion-card>
 </ion-content>
+
