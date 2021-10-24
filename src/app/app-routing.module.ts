@@ -23,7 +23,15 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'receta1',
+    loadChildren: () => import('./receta1/receta1.module').then( m => m.Receta1PageModule)
   },
+  {
+    path: 'receta2',
+    loadChildren: () => import('./receta2/receta2.module').then( m => m.Receta2PageModule)
+  },
+
 
 
 
