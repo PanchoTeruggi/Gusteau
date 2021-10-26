@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InicioService} from './inicio.service';
 
 @Component({
   selector: 'app-inicio',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+public nombreusuarios:any;
+  constructor(private inicioService: InicioService) {}
 
-  constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {this.inicioService.getUsuario().subscribe(data =>{
+          this.nombreusuarios=data
+      })
+  }
+  
+  
+    
 }
