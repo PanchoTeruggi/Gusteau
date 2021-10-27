@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -6,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-img:string;
-img2:string;
-img3:string;
-  constructor() { }
+  recetacard: any[] =Array(3);
+  public traenombre:any;
 
-  ngOnInit() {
-    this.img = 'https://www.foodtempel.de/wp-content/uploads/2017/12/rotes-Pesto-mit-getrockneten-Tomaten-Pesto-rosso-768x576.jpg'
-    this.img2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTBVqI7BBWFapyfwLQ-jS3mdMuEgwJQxfQw&usqp=CAU"
-    this.img3 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEC0mkmSsKGrxUYWZRQcN-pAStxXJBgl2dEA&usqp=CAU"
-
-  }
+constructor(private homeService: HomeService) {}
+ngOnInit(){
+      this.homeService.getReceta().subscribe(data =>{
+        this.traenombre=data;
+ console.log(data);
+      })
+    }
+  
 }

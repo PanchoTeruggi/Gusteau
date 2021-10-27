@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { recetasService } from './recetas.service';
 
 @Component({
   selector: 'app-recetas',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recetas.page.scss'],
 })
 export class RecetasPage implements OnInit {
+  public traenombre:any;
+  constructor(private recetasService: recetasService) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit(){
+        this.recetasService.getData().subscribe(data =>{
+          this.traenombre=data;
+    console.log(data);
+        })
+      }
 
 }

@@ -7,7 +7,7 @@ import {InicioService} from './inicio.service';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
-public nombreusuarios:any;
+ public nombreusuarios:any;
   constructor(private inicioService: InicioService) {}
 
 
