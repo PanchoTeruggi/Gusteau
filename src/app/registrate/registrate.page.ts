@@ -15,7 +15,7 @@ constructor(private registrateService: RegistrateService) {}
 
   ngOnInit() {
   }
-enviarinfo(){
+registrar(){
   this.datos.push(this.aliaschef);
   this.datos.push(this.contra);
   this.datos.push(this.emai);
